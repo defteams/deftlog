@@ -2,7 +2,7 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use tauri::{Manager, Window};
-use std::io::{Read};
+use std::io::Read;
 use std::net::{TcpListener, TcpStream};
 
 // the payload type must implement `Serialize` and `Clone`.
@@ -64,7 +64,7 @@ fn handle_client(mut stream: TcpStream, window: Window) {
 
     // let response = "Log entry received\n";
     // stream.write_all(response.as_bytes()).unwrap();
-    window.emit("event-name", LogPayload(log_string)).unwrap();
+    window.emit("log_entry", LogPayload(log_string)).unwrap();
 }
 
 fn main() {

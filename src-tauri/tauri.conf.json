@@ -5,10 +5,6 @@
     "devPath": "http://localhost:1420",
     "distDir": "../dist"
   },
-  "package": {
-    "productName": "deftlog",
-    "version": "0.0.0"
-  },
   "tauri": {
     "allowlist": {
       "all": false,
@@ -36,7 +32,8 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "deftlog",
+        "title": "Deftlog",
+        "titleBarStyle": "Transparent",
         "width": 800,
         "height": 600
       }

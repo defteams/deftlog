@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ag-theme-quartz,
+.ag-theme-quartz-dark,
+.ag-theme-quartz-auto-dark {
+    --ag-wrapper-border-radius: 0;
+}

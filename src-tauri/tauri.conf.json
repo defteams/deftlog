@@ -5,6 +5,10 @@
     "devPath": "http://localhost:1420",
     "distDir": "../dist"
   },
+  "package": {
+    "productName": "deftlog",
+    "version": "0.0.1"
+  },
   "tauri": {
     "allowlist": {
       "all": false,

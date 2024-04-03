@@ -1,6 +1,6 @@
 [package]
 name = "Deftlog"
-version = "0.0.3"
+version = "0.0.4"
 description = "Monolog client"
 authors = ["Lafif Astahdziq"]
 license = ""

@@ -1,5 +1,5 @@
 [package]
-name = "deftlog"
+name = "Deftlog"
 version = "0.0.2"
 description = "Monolog client"
 authors = ["Lafif Astahdziq"]

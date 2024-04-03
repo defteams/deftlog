@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "deftlog",
+    "productName": "Deftlog",
     "version": "0.0.2"
   },
   "tauri": {

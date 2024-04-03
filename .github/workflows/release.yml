@@ -43,6 +43,9 @@ jobs:
 
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@stable
+        with:
+          # Those targets are only used on macos runners so it's in an `if` to slightly speed up windows and linux builds.
+          targets: ${{ matrix.settings.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
 
       - name: Install dependencies (ubuntu only)
         if: matrix.settings.platform == 'ubuntu-20.04'
@@ -52,10 +55,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-
-      - name: Add Mac Arm based target
-        if: matrix.settings.args == '--target aarch64-apple-darwin'
-        run: rustup target add aarch64-apple-darwin
 
       - name: Build and Release
         uses: tauri-apps/tauri-action@v0

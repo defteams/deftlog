@@ -1,7 +1,7 @@
 {
   "name": "deftlog",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "version": "tauri-version"
+    "bump": "tauri-version --no-git"
   },
   "dependencies": {
     "@ag-grid-community/client-side-row-model": "^31.2.0",

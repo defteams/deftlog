@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:tauri": "tauri dev",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "version": "tauri-version"
   },
   "dependencies": {
     "@ag-grid-community/client-side-row-model": "^31.2.0",
@@ -29,6 +31,7 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
+    "tauri-version": "^0.3.0",
     "typescript": "^5.4.3",
     "vite": "^5.2.7"
   }
